@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Infix to Postfix Converter and Evaluator</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Infix to Postfix Converter and Evaluator</h1>
+        <form id="expressionForm">
+            <label for="infix">Enter an infix expression:</label>
+            <input type="text" id="infix" placeholder="e.g., A + B / ( e / 6 )" required>
+
+            <label for="variables">Enter variables and their values (comma-separated, e.g., A=2,B=3,e=5):</label>
+            <input type="text" id="variables" placeholder="e.g., A=2,B=3,e=5" required>
+
+            <button type="submit">Convert and Evaluate</button>
+        </form>
+        <div id="results">
+            <p><strong>Postfix Expression:</strong> <span id="postfixResult"></span></p>
+            <p><strong>Evaluation Result:</strong> <span id="evaluationResult"></span></p>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
